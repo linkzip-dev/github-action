@@ -1,0 +1,18 @@
+{
+  "name": "linkzip-action",
+  "version": "1.0.0",
+  "description": "GitHub Action to deploy static files to linkzip.dev",
+  "main": "index.js",
+  "scripts": {
+    "compile": "ncc build index.js --license licenses.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0",
+    "linkzip-cli": "^0.1.5"
+  }
+}

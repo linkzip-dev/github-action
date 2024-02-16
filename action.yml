@@ -1,0 +1,16 @@
+name: "LinkZip action"
+description: "LinkZip CLI is a powerful tool designed to streamline the deployment process of static content."
+inputs:
+  api-token:
+    description: "LinkZip api token"
+    required: true
+  deploy-message:
+    description: "Deployment message"
+    required: false
+
+outputs:
+  deploy-url:
+    description: "Deployment url"
+runs:
+  using: "node20"
+  main: "dist/index.js"

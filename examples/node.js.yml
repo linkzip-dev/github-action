@@ -1,0 +1,20 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm ci
+      - run: npm run build --if-present
+      - name: Deploy to LinkZip
+        uses: linkzip-dev/github-action@v1
+        with:
+          api-token: ${{ secrets.LINKZIP_API_TOKEN }}
+          deploy-message: "${{ github.event.head_commit.message }}"
