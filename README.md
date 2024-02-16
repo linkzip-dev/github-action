@@ -18,10 +18,6 @@ Deployment message (optional).
 
 Deployment URL.
 
-### `deploy-error`
-
-Deployment error message, if any.
-
 ## Example usage
 
 ```yaml
