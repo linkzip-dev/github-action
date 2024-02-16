@@ -89777,7 +89777,6 @@ const { getCurrentPath } = __nccwpck_require__(9940);
 
 function processResponse(res) {
   if (res.status === "ok") {
-    console.log(res.message);
     core.setOutput("deploy-url", res.message);
   } else {
     const message = apiErrors[res.message];

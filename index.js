@@ -9,7 +9,6 @@ const { getCurrentPath } = require("linkzip-cli/helpers/filesystem");
 
 function processResponse(res) {
   if (res.status === "ok") {
-    console.log(res.message);
     core.setOutput("deploy-url", res.message);
   } else {
     const message = apiErrors[res.message];
