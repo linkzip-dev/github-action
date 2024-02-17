@@ -1,6 +1,8 @@
 # LinkZip GitHub Action
 
-This GitHub Action simplifies the deployment process of static content packaged within a zip archive to LinkZip services.
+This GitHub Action simplifies the deployment process of static content packaged within a zip archive to [LinkZip](https://linkzip.dev) services.
+It streamlines the workflow by automating the steps involved in uploading and deploying the content, ensuring efficiency and accuracy in the deployment process.
+With this Action, developers can seamlessly integrate their static content deployment into their GitHub workflows, saving time and effort while ensuring a smooth deployment experience to [LinkZip](https://linkzip.dev) service.
 
 ## Inputs
 

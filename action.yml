@@ -1,8 +1,9 @@
+author: "LinkZip"
 name: "LinkZip action"
 description: "LinkZip CLI is a powerful tool designed to streamline the deployment process of static content."
 branding:
-  icon: 'box'
-  color: 'blue'
+  icon: "box"
+  color: "blue"
 inputs:
   api-token:
     description: "LinkZip api token"
